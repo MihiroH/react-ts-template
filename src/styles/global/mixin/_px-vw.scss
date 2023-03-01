@@ -1,0 +1,13 @@
+@use 'sass:math';
+@use '../variables' as var;
+
+// px to vw
+// ---------------------------------------------------------------------------
+
+@function pw($size) {
+  @return math.div($size, var.$design-width-sp) * 100 + vw;
+}
+
+@function pw-pc($size) {
+  @return math.div($size, var.$design-width-pc) * 100 + vw;
+}

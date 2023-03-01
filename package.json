@@ -1,0 +1,49 @@
+{
+  "name": "react-ts-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "eject": "craco eject",
+    "lint": "run-p lint:style lint:script",
+    "lint:fix": "run-p lint:style:fix lint:script:fix",
+    "lint:script": "eslint './src/**/*.{js,jsx,ts,tsx}'",
+    "lint:script:fix": "eslint --fix './src/**/*.{js,jsx,ts,tsx}'",
+    "lint:style": "stylelint src/**/*.scss",
+    "lint:style:fix": "stylelint --fix src/**/*.scss",
+    "format": "prettier --write --ignore-path .gitignore './src/**/*.{js,jsx,ts,tsx,json,scss}'",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@craco/craco": "^5.9.0",
+    "@types/node": "^18.14.1",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "eslint": "^8.34.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.4",
+    "react-scripts": "5.0.1",
+    "sanitize.css": "^13.0.0",
+    "sass": "^1.58.3",
+    "stylelint": "^15.2.0",
+    "stylelint-config-recess-order": "^4.0.0",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.4.0",
+    "typescript": "^4.9.5"
+  }
+}

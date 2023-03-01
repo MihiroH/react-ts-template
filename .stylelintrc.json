@@ -1,0 +1,18 @@
+{
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-prettier"
+  ],
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-recess-order"
+  ],
+  "ignoreFiles": [
+    "**/node_modules/**"
+  ],
+  "rules": {
+    "selector-class-pattern": null,
+    "color-hex-length": "short",
+    "length-zero-no-unit": true
+  }
+}

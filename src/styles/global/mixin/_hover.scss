@@ -1,0 +1,27 @@
+@use 'sass:list';
+
+// :hover, :focus, :activeの疑似クラスを一括設定
+// @param {Boolean} $-hover  - :hoverのセレクタの有効／無効
+// @param {Boolean} $-focus  - :focusのセレクタの有効／無効
+// @param {Boolean} $-active - :activeのセレクタの有効／無効
+// ---------------------------------------------------------------------------
+
+@mixin hover($-hover: true, $-active: false, $-focus: false) {
+  $-pseudo-bind: ();
+
+  @if $-hover {
+    $-pseudo-bind: list.append($-pseudo-bind, '&:hover', comma);
+  }
+
+  @if $-active {
+    $-pseudo-bind: list.append($-pseudo-bind, '&:active', comma);
+  }
+
+  @if $-focus {
+    $-pseudo-bind: list.append($-pseudo-bind, '&:focus', comma);
+  }
+
+  #{$-pseudo-bind} {
+    @content;
+  }
+}
