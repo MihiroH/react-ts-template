@@ -1,0 +1,149 @@
+@use '../global' as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+dl,
+dt,
+dd,
+figure,
+figcaption,
+fieldset,
+button {
+  padding: 0;
+  margin: 0;
+}
+
+picture,
+img,
+iframe,
+embed,
+object,
+video,
+fieldset,
+button {
+  border: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  font-size: $font-size-narrow;
+  color: $color-text;
+  background-color: $color-background;
+
+  @include mq {
+    font-size: $font-size-wide;
+  }
+}
+
+// フッター下すペースなし
+html,
+body {
+  height: 100%;
+}
+
+// stylelint-disable-next-line no-duplicate-selectors -- ベースのスタイルとは別にレイアウトのスタイルを定義
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row dense;
+  font-feature-settings: 'palt';
+  letter-spacing: 0.02em;
+}
+
+li,
+dt,
+dd {
+  list-style: none;
+}
+
+figure,
+figcaption {
+  display: block;
+}
+
+em,
+strong,
+b {
+  font-style: normal;
+  font-weight: bold;
+}
+
+sub,
+sup {
+  bottom: -0.2em;
+}
+
+dfn {
+  font-style: normal;
+}
+
+iframe {
+  width: 100%;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+label {
+  cursor: pointer;
+}
+
+input {
+  &::-ms-clear {
+    visibility: hidden;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+select {
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+input,
+button,
+select,
+textarea,
+[role='button'] {
+  font-size: 1.6rem;
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
+}
+
+a,
+button,
+input[type='button'] {
+  opacity: 1;
+  transition: opacity $transition-duration;
+
+  @include hover {
+    opacity: $opacity;
+  }
+}

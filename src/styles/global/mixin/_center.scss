@@ -1,0 +1,24 @@
+// センター寄せ
+// ---------------------------------------------------------------------------
+
+@mixin v-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin vh-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin v-inline-center {
+  display: inline-flex;
+  align-items: center;
+}
+
+@mixin vh-inline-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

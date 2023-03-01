@@ -1,0 +1,44 @@
+/* -----------------
+  Colors
+----------------- */
+$black: #000;
+$white: #fff;
+
+// Colors Alias
+$color-text: $black;
+$color-background: $white;
+
+/* -----------------
+  Fonts
+----------------- */
+$font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+  'Droid Sans', 'Helvetica Neue', sans-serif;
+$font-size-narrow: 1.4rem;
+$font-size-wide: 1.6rem;
+
+/* -----------------
+  Media Queries
+----------------- */
+$breakpoint: (
+  sm: 481px,
+  md: 769px,
+  lg: 1280px,
+  xl: 1360px,
+);
+
+/* -----------------
+  Opacity
+----------------- */
+$opacity: 0.7;
+
+/* -----------------
+  Transitions
+----------------- */
+$transition-duration: 0.4s;
+$transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+
+/* -----------------
+  Utilities
+----------------- */
+$design-width-sp: 480px;
+$design-width-pc: 1660px;
