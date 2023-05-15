@@ -1,0 +1,13 @@
+  {
+    "./**/*.{js,jsx,ts,tsx,scss}": [
+      "npm run format"
+    ],
+    "./**/*.{js,jsx,ts,tsx}": [
+      "npm run lint:script:fix",
+      "npm run lint:script"
+    ],
+    "./**/*.scss": [
+      "npm run lint:style:fix",
+      "npm run lint:style"
+    ]
+  }

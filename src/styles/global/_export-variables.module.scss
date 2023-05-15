@@ -1,0 +1,10 @@
+// JSで使えるようにするための変数を定義
+// @see https://www.falldowngoboone.com/blog/share-variables-between-javascript-and-css/#icss
+
+// stylelint-disable
+:export {
+  breakpointSm: map-get($breakpoint, sm);
+  breakpointMd: map-get($breakpoint, md);
+  breakpointLg: map-get($breakpoint, lg);
+  breakpointXl: map-get($breakpoint, xl);
+}
